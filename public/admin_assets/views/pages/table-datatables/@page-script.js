@@ -110,10 +110,10 @@ jQuery(function($) {
     // no specific initial ordering
     order: [],
 
-    language: {
-      search: '<i class="fa fa-search pos-abs mt-2 pt-3px ml-25 text-blue-m2"></i>',
-      searchPlaceholder: " Search Employees..."
-    }
+    // language: {
+    //   search: '<i class="fa fa-search pos-abs mt-2 pt-3px ml-25 text-blue-m2"></i>',
+    //   searchPlaceholder: " "
+    // }
   })
 
   
@@ -123,7 +123,7 @@ jQuery(function($) {
   // move searchbox into table header
   .find('.dataTables_filter').appendTo('.page-tools').find('input').addClass('pl-45 radius-round').removeClass('form-control-sm')
   // and add a "+" button
-  .end().append('<button data-rel="tooltip" type="button" class="btn radius-round btn-outline-primary border-2 btn-sm ml-2" title="Add New"><i class="fa fa-plus"></i></button>')
+  // .end().append('<button data-rel="tooltip" type="button" class="btn radius-round btn-outline-primary border-2 btn-sm ml-2" title="Add New"><i class="fa fa-plus"></i></button>')
 
 
 

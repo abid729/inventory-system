@@ -26,13 +26,7 @@
         <i class="fa fa-search text-white text-90 py-1"></i>
       </button>
 
-      <div class="collapse navbar-collapse navbar-backdrop" id="navbarSearch">
-        <form class="d-flex align-items-center pl-45 py-2 ml-lg-4 pl-lg-1" data-submit="dismiss">
-          <i class="fa fa-search text-white text-105 mr-n45"></i>
-          <input type="text" class="navbar-input pr-2 pl-475 py-2 radius-1 autofocus" placeholder="Search for something ..." aria-label="Search">
-        </form>
-      </div>
-
+   
     </div><!-- .navbar-content -->
 
 
