@@ -132,7 +132,7 @@
               </li>
 
 
-              <li class="nav-item active">
+              <li class="nav-item {{ (request()->is('admin/all-brands')) ? 'active' : '' }}">
 
                 <a href="admin/all-brands" class="nav-link">
 
@@ -147,11 +147,11 @@
               </li>
 
 
-              <li class="nav-item">
+              <li class="nav-item {{ (request()->is('admin/unit*')) ? 'active' : '' }}">
 
-                <a href="html/horizontal.html" class="nav-link">
+                <a href="{{ route('all-units') }}" class="nav-link">
 
-                  <span class="nav-text">
+                  <span class="nav-text ">
                  <span>Units</span>
                   </span>
 

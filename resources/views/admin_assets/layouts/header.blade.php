@@ -35,3 +35,13 @@
     <link rel="stylesheet" type="text/css" href="{{asset('admin_assets/./node_modules/datatables.net-bs4/css/dataTables.bootstrap4.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('admin_assets/./node_modules/datatables.net-buttons-bs4/css/buttons.bootstrap4.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('admin_assets/./views/pages/table-datatables/@page-style.css')}}">
+
+    <link rel="stylesheet" type="text/css" href="{{asset('admin_assets/./node_modules/bootstrap-select/dist/css/bootstrap-select.css')}}">
+
+    <link rel="stylesheet" type="text/css" href="{{asset('admin_assets/./node_modules/bootstrap-duallistbox/dist/bootstrap-duallistbox.css')}}">
+
+
+    <link rel="stylesheet" type="text/css" href="{{asset('admin_assets/./node_modules/select2/dist/css/select2.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('admin_assets/./node_modules/chosen-js/chosen.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('admin_assets/./node_modules/bootstrap-star-rating/css/star-rating.css')}}">
+

@@ -45,3 +45,11 @@
 
 
  <script src="{{asset('admin_assets/./node_modules/datatables.net-responsive/js/dataTables.responsive.js')}}"></script>
+ <script src="{{asset('admin_assets/./node_modules/select2/dist/js/select2.js')}}"></script>
+ <script src="{{asset('admin_assets/./node_modules/chosen-js/chosen.jquery.js')}}"></script>
+ <script src="{{asset('admin_assets/./node_modules/bootstrap-select/dist/js/bootstrap-select.js')}}"></script>
+ <script src="{{asset('admin_assets/./node_modules/bootstrap-duallistbox/dist/jquery.bootstrap-duallistbox.js')}}"></script>
+ <script src="{{asset('admin_assets/./node_modules/bootstrap-star-rating/js/star-rating.js')}}"></script>
+
+ <script src="{{asset('admin_assets/./node_modules/typeahead.js/dist/typeahead.bundle.js')}}"></script>
+

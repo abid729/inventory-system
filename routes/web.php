@@ -7,6 +7,8 @@ use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SettingController;
+use App\Http\Controllers\Units;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -58,4 +60,10 @@ Route::prefix('admin')->group(function () {
     Route::post('/store-brand',[Brands::class,'store'])->name('store-brand');
     Route::get('/brand/edit/{id}', [Brands::class, 'edit'])->name('edit-brand');
     Route::post('/brand/update/{id}', [Brands::class, 'update'])->name('update-brand');
+    
+    Route::get('/unit/all',[Units::class,'ShowAllunits'])->name('all-units');
+    Route::get('/unit/create',[Units::class,'create'])->name('create-unit');
+    Route::post('/store-unit',[Units::class,'store'])->name('store-unit');
+    Route::get('/unit/edit/{id}', [Units::class, 'edit'])->name('edit-unit');
+    Route::post('/unit/update/{id}', [Units::class, 'update'])->name('update-unit');
 });
