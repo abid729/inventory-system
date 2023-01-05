@@ -66,7 +66,7 @@ Route::prefix('admin')->group(function () {
     Route::post('/store-unit',[Units::class,'store'])->name('store-unit');
     Route::get('/unit/edit/{id}', [Units::class, 'edit'])->name('edit-unit');
     Route::post('/unit/update/{id}', [Units::class, 'update'])->name('update-unit');
-    
+    Route::delete('/unit/delete/{id}', [Units::class, 'DeleteUnits'])->name('delete-unit');
 
 });
 Route::get('changeStatus', [Units::class, 'changeStatus'])->name('changeStatus');
