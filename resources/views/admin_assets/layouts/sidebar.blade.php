@@ -117,12 +117,13 @@
               </li>
 
 
-              <li class="nav-item">
+           
+              <li class="nav-item {{ (request()->is('admin/category*')) ? 'active' : '' }}">
 
-                <a href="html/dashboard-3.html" class="nav-link">
+                <a href="{{ route('all-category') }}" class="nav-link">
 
-                  <span class="nav-text">
-                 <span>Products Categories</span>
+                  <span class="nav-text ">
+                 <span>Category</span>
                   </span>
 
 
@@ -131,10 +132,9 @@
 
               </li>
 
-
               <li class="nav-item {{ (request()->is('admin/all-brands')) ? 'active' : '' }}">
 
-                <a href="admin/all-brands" class="nav-link">
+                <a href=" {{ route('all-brands') }}" class="nav-link">
 
                   <span class="nav-text">
                  <span>Brands</span>

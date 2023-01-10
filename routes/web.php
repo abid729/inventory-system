@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SettingController;
 use App\Http\Controllers\Units;
+use App\Http\Controllers\Category;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,12 +56,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::prefix('admin')->group(function () {
     Route::get('/setting',[SettingController::class,'index']);
-    Route::get('/all-brands',[Brands::class,'ShowAllBrands']);
+    Route::get('/all-brands',[Brands::class,'ShowAllBrands'])->name('all-brands');
     Route::get('/create-brand',[Brands::class,'create']);
     Route::post('/store-brand',[Brands::class,'store'])->name('store-brand');
     Route::get('/brand/edit/{id}', [Brands::class, 'edit'])->name('edit-brand');
     Route::post('/brand/update/{id}', [Brands::class, 'update'])->name('update-brand');
-    
     Route::get('/unit/all',[Units::class,'ShowAllunits'])->name('all-units');
     Route::get('/unit/create',[Units::class,'create'])->name('create-unit');
     Route::post('/store-unit',[Units::class,'store'])->name('store-unit');
@@ -68,5 +68,12 @@ Route::prefix('admin')->group(function () {
     Route::post('/unit/update/{id}', [Units::class, 'update'])->name('update-unit');
     Route::delete('/unit/delete/{id}', [Units::class, 'DeleteUnits'])->name('delete-unit');
 
+
+    Route::get('/category/all',[Category::class,'ShowAllcategory'])->name('all-category');
+    Route::get('/category/create',[Category::class,'create'])->name('create-category');
+    Route::post('/store-category',[Category::class,'store'])->name('store-category');
+    Route::get('/category/edit/{id}', [Category::class, 'edit'])->name('edit-category');
+    Route::post('/category/update/{id}', [Category::class, 'update'])->name('update-category');
+    Route::delete('/category/delete/{id}', [Category::class, 'Deletecategory'])->name('delete-category');
 });
 Route::get('changeStatus', [Units::class, 'changeStatus'])->name('changeStatus');

@@ -33,7 +33,7 @@
     <!-- mobile #navbarMenu toggler button -->
     <button class="navbar-toggler ml-1 mr-2 px-1" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navbar menu">
       <span class="pos-rel">
-            <img class="border-2 brc-white-tp1 radius-round" width="36" src="assets/image/avatar/avatar6.jpg" alt="Jason's Photo">
+            <img class="border-2 brc-white-tp1 radius-round" width="36" src="{{asset('admin_assets/assets/image/avatar/avatar6.jpg')}}" alt="Jason's Photo">
             <span class="bgc-warning radius-round border-2 brc-white p-1 position-tr mr-1px mt-1px"></span>
       </span>
     </button>
@@ -265,7 +265,7 @@
                 <div class="tab-pane mh-none pl-md-2" id="navbar-notif-tab-2" role="tabpanel">
                   <div data-ace-scroll="{&quot;ignore&quot;: &quot;mobile&quot;, &quot;height&quot;: 300, &quot;smooth&quot;:true}" class="ace-scroll ace-scroll-wrap" style="max-height: 300px;"><div class="ace-scroll-inner" style="color: rgb(33, 37, 41);">
                     <a href="#" class="d-flex mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
-                      <img alt="Alex's avatar" src="assets/image/avatar/avatar.png" width="48" class="align-self-start border-2 brc-primary-m3 p-1px mr-2 radius-round">
+                      <img alt="Alex's avatar" src="{{asset('admin_assets/assets/image/avatar/avatar.png')}}" width="48" class="align-self-start border-2 brc-primary-m3 p-1px mr-2 radius-round">
                       <div>
                         <span class="text-primary-m1 font-bolder">Alex:</span>
                         <span class="text-grey text-90">Ciao sociis natoque penatibus et auctor ...</span>
@@ -278,7 +278,7 @@
                     </a>
                     <hr class="my-1px brc-grey-l3">
                     <a href="#" class="d-flex mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
-                      <img alt="Susan's avatar" src="assets/image/avatar/avatar3.png" width="48" class="align-self-start border-2 brc-primary-m3 p-1px mr-2 radius-round">
+                      <img alt="Susan's avatar" src="{{asset('admin_assets/assets/image/avatar/avatar3.png')}}" width="48" class="align-self-start border-2 brc-primary-m3 p-1px mr-2 radius-round">
                       <div>
                         <span class="text-primary-m1 font-bolder">Susan:</span>
                         <span class="text-grey text-90">Vestibulum id ligula porta felis euismod ...</span>
@@ -291,7 +291,7 @@
                     </a>
                     <hr class="my-1px brc-grey-l3">
                     <a href="#" class="d-flex mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
-                      <img alt="Bob's avatar" src="assets/image/avatar/avatar4.png" width="48" class="align-self-start border-2 brc-primary-m3 p-1px mr-2 radius-round">
+                      <img alt="Bob's avatar" src="{{asset('admin_assets/assets/image/avatar/avatar4.png')}}" width="48" class="align-self-start border-2 brc-primary-m3 p-1px mr-2 radius-round">
                       <div>
                         <span class="text-primary-m1 font-bolder">Bob:</span>
                         <span class="text-grey text-90">Nullam quis risus eget urna mollis ornare ...</span>
@@ -304,7 +304,7 @@
                     </a>
                     <hr class="my-1px brc-grey-l3">
                     <a href="#" class="d-flex mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
-                      <img alt="Kate's avatar" src="assets/image/avatar/avatar2.png" width="48" class="align-self-start border-2 brc-primary-m3 p-1px mr-2 radius-round">
+                      <img alt="Kate's avatar" src="{{asset('admin_assets/assets/image/avatar/avatar2.png')}}" width="48" class="align-self-start border-2 brc-primary-m3 p-1px mr-2 radius-round">
                       <div>
                         <span class="text-primary-m1 font-bolder">Kate:</span>
                         <span class="text-grey text-90">Ciao sociis natoque eget urna mollis ornare ...</span>
@@ -317,7 +317,7 @@
                     </a>
                     <hr class="my-1px brc-grey-l3">
                     <a href="#" class="d-flex mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
-                      <img alt="Fred's avatar" src="assets/image/avatar/avatar5.png" width="48" class="align-self-start border-2 brc-primary-m3 p-1px mr-2 radius-round">
+                      <img alt="Fred's avatar" src="{{asset('admin_assets/assets/image/avatar/avatar5.png')}}" width="48" class="align-self-start border-2 brc-primary-m3 p-1px mr-2 radius-round">
                       <div>
                         <span class="text-primary-m1 font-bolder">Fred:</span>
                         <span class="text-grey text-90">Vestibulum id penatibus et auctor  ...</span>
@@ -413,7 +413,7 @@
 
           <li class="nav-item dropdown order-first order-lg-last dropdown-hover">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              <img id="id-navbar-user-image" class="d-none d-lg-inline-block radius-round border-2 brc-white-tp1 mr-2 w-6" src="assets/image/avatar/avatar6.jpg" alt="Jason's Photo">
+              <img id="id-navbar-user-image" class="d-none d-lg-inline-block radius-round border-2 brc-white-tp1 mr-2 w-6" src="{{asset('admin_assets/assets/image/avatar/avatar6.jpg')}}" alt="Jason's Photo">
               <span class="d-inline-block d-lg-none d-xl-inline-block">
                         <span class="text-90" id="id-user-welcome">Welcome,</span>
               <span class="nav-user-name">Jason</span>

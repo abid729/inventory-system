@@ -67,7 +67,7 @@ class Units extends Controller
             'base_unit' => 'required'
         ]);
         if ($validator->fails()) {
-            dd($request->all());
+            return \Redirect::back()->withInput()->withErrors($validator);
         }
         //short_name upload
        
