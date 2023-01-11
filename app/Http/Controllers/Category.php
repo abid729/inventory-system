@@ -16,6 +16,8 @@ class Category extends Controller
 
     public function ShowAllCategory() {
        
+
+
         $category =  $this->category->getAllCategory();
         
         return view('admin_assets.Category.category')->with('category', $category);
@@ -28,8 +30,12 @@ class Category extends Controller
     }
     public function store(Request $request)
     {
-      
+        // $urlWithQueryString = $request->fullUrl();
+        // $request->fullUrlWithQuery(['url' => $urlWithQueryString]);
+       
 
+        // ($name = $request->input('name', 'Sally') );
+        // dd($name);
         // validate and store data
         $request->validate([
             'image' => 'required',
