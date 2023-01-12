@@ -42,4 +42,11 @@ class AdminController extends Controller
         return redirect('/admin/products');
     }
 
+    public function logout(){
+        \Session::flush();
+        
+        // \Auth::logout();
+
+        // return redirect('dashboaed');
+    }
 }

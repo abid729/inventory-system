@@ -25,6 +25,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::group(['middleware' => ['auth']], function() {
 
 Route::get('/products', [ProductController::class, 'index'])->name('product.index');
 Route::get('/products/create', [ProductController::class, 'create'])->name('product.create');
@@ -37,6 +38,7 @@ Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('/products/comments', [AdminController::class, 'adminGetAllComments'])->name('admin.comment.index');
     Route::delete('/products/delete/{id}', [AdminController::class, 'adminDeleteProduct'])->name('admin.product.delete');
     Route::delete('/products/comments/{id}', [AdminController::class, 'adminDeleteComment'])->name('admin.comment.delete');
+    Route::post('/logout', [AdminController::class, 'logout'])->name('logout');
 });
 
 
@@ -67,6 +69,7 @@ Route::prefix('admin')->group(function () {
     Route::get('/unit/edit/{id}', [Units::class, 'edit'])->name('edit-unit');
     Route::post('/unit/update/{id}', [Units::class, 'update'])->name('update-unit');
     Route::delete('/unit/delete/{id}', [Units::class, 'DeleteUnits'])->name('delete-unit');
+    // Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
 
     Route::get('/category/all',[Category::class,'ShowAllcategory'])->name('all-category');
@@ -77,3 +80,4 @@ Route::prefix('admin')->group(function () {
     Route::delete('/category/delete/{id}', [Category::class, 'Deletecategory'])->name('delete-category');
 });
 Route::get('changeStatus', [Units::class, 'changeStatus'])->name('changeStatus');
+});

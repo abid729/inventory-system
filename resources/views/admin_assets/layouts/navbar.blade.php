@@ -443,10 +443,14 @@
 
               <div class="dropdown-divider brc-primary-l2"></div>
 
-              <a class="dropdown-item btn btn-outline-grey btn-h-lighter-secondary btn-a-lighter-secondary" href="html/page-login.html">
-                <i class="fa fa-power-off text-warning-d1 text-105 mr-1"></i>
-                Logout
-              </a>
+              <a class="dropdown-item" href="{{ route('logout') }}"
+              onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();">
+               {{ __('Logout') }}
+           </a>
+           <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+            @csrf
+        </form>
             </div>
           </li><!-- .nav-item:last -->
 
