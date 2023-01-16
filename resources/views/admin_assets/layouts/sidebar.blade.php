@@ -160,7 +160,19 @@
 
 
               </li>
+              <li class="nav-item {{ (request()->is('admin/baseunit*')) ? 'active' : '' }}">
 
+                <a href="{{ route('all-baseunit') }}" class="nav-link">
+
+                  <span class="nav-text ">
+                 <span>Base Units</span>
+                  </span>
+
+
+                </a>
+
+
+              </li>
 
               <li class="nav-item">
 

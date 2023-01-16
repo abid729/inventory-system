@@ -11,6 +11,8 @@ use App\Repository\IBrandsRepository;
 use App\Repository\IUnitsRepository;
 use App\Repository\UnitsRepository;
 use App\Repository\ICategoryRepository;
+use App\Repository\IBaseUnitsRepository;
+use App\Repository\BaseUnitsRepository;
 use App\Repository\CategoryRepository;
 use Illuminate\Support\ServiceProvider;
 
@@ -27,6 +29,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(IAdminRepository::class, AdminRepository::class);
         $this->app->bind(IBrandsRepository::class, BrandsRepository::class);
         $this->app->bind(IUnitsRepository::class, UnitsRepository::class);
+        $this->app->bind(IBaseUnitsRepository::class, BaseUnitsRepository::class);
         $this->app->bind(ICategoryRepository::class, CategoryRepository::class);
     }
 

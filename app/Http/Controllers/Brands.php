@@ -16,9 +16,9 @@ class Brands extends Controller
 
 
     public function ShowAllBrands() {
-       
+
         $brand =  $this->brand->getAllBrands();
-        
+
         return view('admin_assets.Brands.brands')->with('brands', $brand);
     }
     public function create()
@@ -62,7 +62,7 @@ class Brands extends Controller
     public function update(Request $request, $id)
     {
 
-       
+
         $validator = Validator::make($request->all(), [
             'image' => 'required',
             'name' => 'required',
@@ -72,7 +72,7 @@ class Brands extends Controller
             dd($request->all());
         }
         //image upload
-       
+
         $data = $request->all();
 
         if($image = $request->file('image')) {
